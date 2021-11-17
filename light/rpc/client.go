@@ -616,8 +616,8 @@ func (c *Client) UnsubscribeAllWS(ctx *rpctypes.Context) (*ctypes.ResultUnsubscr
 // XXX: Copied from rpc/core/env.go
 const (
 	// see README
-	defaultPerPage = 30
-	maxPerPage     = 100
+	defaultPerPage = 10000
+	maxPerPage     = 10001
 )
 
 func validatePage(pagePtr *int, perPage, totalCount int) (int, error) {
